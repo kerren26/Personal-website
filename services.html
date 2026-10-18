@@ -1,241 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 
+    Course: Introduction to Web Design and Development
+    Assignment: Group Project (Group of 3)
+    Topic: Business Website - Pinnacle Realty
+    Page: Services Page (services.html)
+    
+    Group Members:
+    1. Member 1: Full Name - Reg No: REG/001/2026
+    2. Member 2: Full Name - Reg No: REG/002/2026
+    3. Member 3: Full Name - Reg No: REG/003/2026
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Pinnacle Realty</title>
-  <meta name="description" content="Explore Pinnacle Realty's specialized services, including luxury residential sales, asset management, commercial development, and bespoke advisory.">
+  <title>Pinnacle Realty | Services</title>
+  <!-- Link to the single external CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Site Header / Navigation -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">P</div>
-        <div class="logo-text">PINNACLE <span>REALTY</span></div>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="main-nav" id="mainNav">
-        <ul>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        PINNACLE <span>REALTY</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html" class="active">Services</a></li>
           <li><a href="contacts.html">Contacts</a></li>
-          <li><a href="contacts.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">Inquire Now</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Page Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <span class="section-label">Bespoke Real Estate Services</span>
-        <h1>Comprehensive Property Solutions</h1>
-        <p>From prime residential acquisitions to high-yield portfolio management, our managing directors bring institutional discipline to every transaction.</p>
+  <!-- ==================== PAGE BANNER ==================== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Real Estate Services</h1>
+      <p>Discover the range of professional property services offered by Pinnacle Realty</p>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What We Offer</h2>
+        <p>Comprehensive solutions for property buyers, sellers, and tenants</p>
       </div>
-    </section>
 
-    <!-- Services Grid Section -->
-    <section class="services-section">
-      <div class="container">
-        <div class="services-grid">
-          <!-- Service 1 -->
-          <div class="service-card">
-            <div class="service-icon">🏛️</div>
-            <h3>Luxury Residential Sales</h3>
-            <p>Representing iconic penthouses, historic estates, and waterfront villas with discreet global campaigns and private buyer networks.</p>
-            <ul class="service-features">
-              <li>High-net-worth global syndication</li>
-              <li>Confidential private treaty marketing</li>
-              <li>Architectural and interior staging</li>
-            </ul>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Investment & Asset Management</h3>
-            <p>Data-driven acquisition, portfolio balancing, and asset maximization tailored to family offices and private equity investors.</p>
-            <ul class="service-features">
-              <li>Comprehensive cashflow & yield forecasting</li>
-              <li>Tax-efficient ownership structuring</li>
-              <li>Quarterly capital appreciation reporting</li>
-            </ul>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="service-card">
-            <div class="service-icon">🏢</div>
-            <h3>Commercial & Development</h3>
-            <p>Advisory for landmark office towers, mixed-use commercial developments, luxury boutique retail, and institutional assets.</p>
-            <ul class="service-features">
-              <li>Land assembly & master planning</li>
-              <li>Anchor tenant lease negotiations</li>
-              <li>Zoning & entitlement navigation</li>
-            </ul>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="service-card">
-            <div class="service-icon">🔑</div>
-            <h3>Property Concierge & Management</h3>
-            <p>Turnkey luxury property management, routine technical preservation, and dedicated concierge services for prime portfolios.</p>
-            <ul class="service-features">
-              <li>Dedicated property management specialist</li>
-              <li>Vetted high-caliber tenancy screening</li>
-              <li>Preventative architectural audits</li>
-            </ul>
-          </div>
-
-          <!-- Service 5 -->
-          <div class="service-card">
-            <div class="service-icon">📜</div>
-            <h3>Valuation & Due Diligence</h3>
-            <p>Rigorous, independent valuation reports adhering to international appraisal standards and detailed macroeconomic analysis.</p>
-            <ul class="service-features">
-              <li>RICS-compliant appraisal models</li>
-              <li>Structural and environmental risk checks</li>
-              <li>Title deed and covenant audits</li>
-            </ul>
-          </div>
-
-          <!-- Service 6 -->
-          <div class="service-card">
-            <div class="service-icon">🌐</div>
-            <h3>International Relocation</h3>
-            <p>Assisting global clients, expatriates, and corporate executives with residency-by-investment, estate acquisition, and seamless onboarding.</p>
-            <ul class="service-features">
-              <li>Cross-border legal advisory coordination</li>
-              <li>School & community integration services</li>
-              <li>Dual-jurisdiction property structuring</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process-section">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: var(--space-md);">
-          <span class="section-label">Our Methodology</span>
-          <h2 class="section-title">The Pinnacle Acquisition Pathway</h2>
-          <p class="section-subtitle" style="margin-inline: auto;">A transparent, proven 4-stage process ensuring seamless acquisition and enduring asset appreciation.</p>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="icon">🏡</div>
+          <h3>Residential Property Sales</h3>
+          <p>We help families and individuals find their dream homes, apartments, and villas with full assistance throughout the buying process.</p>
+          <ul>
+            <li>Free property site visits</li>
+            <li>Negotiation and price guidance</li>
+            <li>Verified title deed verification</li>
+          </ul>
         </div>
 
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-number">01</div>
-            <h3>Strategic Alignment</h3>
-            <p>We analyze your investment criteria, aesthetic desires, and risk parameters to define a bespoke mandate.</p>
-          </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="icon">🏢</div>
+          <h3>Commercial Leasing</h3>
+          <p>Prime office spaces, retail outlets, and warehouses suitable for growing enterprises and established companies.</p>
+          <ul>
+            <li>Flexible lease agreements</li>
+            <li>High foot-traffic locations</li>
+            <li>Office partition advisory</li>
+          </ul>
+        </div>
 
-          <div class="process-step">
-            <div class="step-number">02</div>
-            <h3>Curated Sourcing</h3>
-            <p>Direct access to off-market properties and premier private listings before they reach the open market.</p>
-          </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="icon">🔑</div>
+          <h3>Property Management</h3>
+          <p>Complete management services for landlords, including tenant screening, rent collection, and regular property maintenance.</p>
+          <ul>
+            <li>Reliable tenant screening</li>
+            <li>Monthly financial statements</li>
+            <li>Routine repair and maintenance</li>
+          </ul>
+        </div>
 
-          <div class="process-step">
-            <div class="step-number">03</div>
-            <h3>Rigorous Due Diligence</h3>
-            <p>Deep legal audit, architectural review, and financial sensitivity modeling prior to transaction execution.</p>
-          </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="icon">📈</div>
+          <h3>Real Estate Investment Advisory</h3>
+          <p>Expert market research and advice for individuals looking to invest in high-yield rental properties and developing areas.</p>
+          <ul>
+            <li>Market trend reports</li>
+            <li>Return on investment (ROI) calculations</li>
+            <li>Long-term capital growth guidance</li>
+          </ul>
+        </div>
 
-          <div class="process-step">
-            <div class="step-number">04</div>
-            <h3>Closing & Asset Handover</h3>
-            <p>White-glove escrow oversight, flawless conveyance, and seamless transition to our management concierge.</p>
-          </div>
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="icon">📋</div>
+          <h3>Property Valuation</h3>
+          <p>Accurate, certified market valuations to help property owners determine the true selling or rental value of their assets.</p>
+          <ul>
+            <li>Comprehensive inspection reports</li>
+            <li>Bank mortgage compliant valuations</li>
+            <li>Current neighborhood price benchmarks</li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="icon">🤝</div>
+          <h3>Legal & Conveyancing Support</h3>
+          <p>Guidance through legal documentation, stamp duty procedures, land registry searches, and contract preparation.</p>
+          <ul>
+            <li>Contract review and preparation</li>
+            <li>Land registry search assistance</li>
+            <li>Fast and secure title transfers</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-      <div class="container">
-        <span class="section-label">Tailored Solutions</span>
-        <h2>Discuss Your Requirements With Our Specialists</h2>
-        <p>Receive a bespoke advisory proposal tailored precisely to your property aspirations.</p>
-        <a href="contacts.html" class="btn btn-primary">Schedule Consultation</a>
-      </div>
-    </section>
-  </main>
+  <!-- ==================== CALL TO ACTION ==================== -->
+  <section class="hero" style="background: var(--primary-color); padding: 3rem 1rem;">
+    <div class="container">
+      <h2>Need a Customized Service Package?</h2>
+      <p style="margin-bottom: 1.5rem;">Speak with one of our managing directors today to find the best property solution for your needs.</p>
+      <a href="contacts.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </section>
 
-  <!-- Site Footer -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo">
-            <div class="logo-icon">P</div>
-            <div class="logo-text">PINNACLE <span>REALTY</span></div>
-          </div>
-          <p>Curators of timeless architectural estates, commercial developments, and bespoke property investment worldwide.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
-
-        <div class="footer-col">
-          <h4>Specializations</h4>
-          <a href="services.html">Penthouse Portfolios</a>
-          <a href="services.html">Waterfront Estates</a>
-          <a href="services.html">Commercial Towers</a>
-          <a href="services.html">Private Syndications</a>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal & Privacy</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Representation</a>
-          <a href="#">Fair Housing Statement</a>
-        </div>
+      <div class="footer-logo">PINNACLE <span>REALTY</span></div>
+      <p>Group Web Development Project — Developed by Group of 3 Members</p>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contacts.html">Contacts</a>
       </div>
-
       <div class="footer-bottom">
-        <div>&copy; 2026 Pinnacle Realty Global Inc. All rights reserved.</div>
-        <div class="footer-socials">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="X / Twitter">𝕏</a>
-          <a href="#" aria-label="YouTube">yt</a>
-        </div>
+        <p>&copy; 2026 Pinnacle Realty. All Rights Reserved. Built with HTML and External CSS.</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    if (navToggle && mainNav) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = mainNav.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-
-    const siteHeader = document.getElementById('siteHeader');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        siteHeader.style.background = 'rgba(15, 26, 46, 0.95)';
-        siteHeader.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.4)';
-      } else {
-        siteHeader.style.background = 'rgba(15, 26, 46, 0.8)';
-        siteHeader.style.boxShadow = 'none';
-      }
-    });
-  </script>
 </body>
 </html>
