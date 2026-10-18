@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | Pinnacle Realty</title>
+  <meta name="description" content="Get in touch with Pinnacle Realty's managing directors and advisory board for confidential property consultations.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">P</div>
+        <div class="logo-text">PINNACLE <span>REALTY</span></div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contacts.html" class="active">Contacts</a></li>
+          <li><a href="contacts.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">Inquire Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Connect With Us</span>
+        <h1>Private Client Inquiries</h1>
+        <p>Our Managing Directors and senior advisory team are available for confidential consultations regarding acquisitions, portfolio valuations, and representations.</p>
+      </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div>
+                <h4>Headquarters</h4>
+                <p>Suite 4800, Pinnacle Financial Tower<br>450 Lexington Avenue, New York, NY 10017</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div>
+                <h4>Telephone Numbers</h4>
+                <p><a href="tel:+18005558900">+1 (800) 555-8900 (Main Office)</a></p>
+                <p><a href="tel:+12125550199">+1 (212) 555-0199 (Private Line)</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div>
+                <h4>Electronic Mail</h4>
+                <p><a href="mailto:advisory@pinnaclerealty.com">advisory@pinnaclerealty.com</a></p>
+                <p><a href="mailto:directors@pinnaclerealty.com">directors@pinnaclerealty.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">⏰</div>
+              <div>
+                <h4>Operating Hours</h4>
+                <p>Monday – Friday: 8:00 AM – 7:00 PM EST</p>
+                <p>Saturday: By Private Appointment Only</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3>Confidential Consultation Request</h3>
+            <p>Please share your property preferences. A managing director will respond within 24 business hours.</p>
+            
+            <form class="contact-form" id="consultationForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="e.g. Alexander Hamilton" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="alexander@domain.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="interest">Area of Interest</label>
+                  <select id="interest" name="interest">
+                    <option value="residential">Luxury Residential Acquisition</option>
+                    <option value="commercial">Commercial & Development Advisory</option>
+                    <option value="portfolio">Portfolio Asset Management</option>
+                    <option value="valuation">Certified Property Valuation</option>
+                    <option value="offmarket">Exclusive Off-Market Access</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message / Specific Requirements</label>
+                <textarea id="message" name="message" placeholder="Provide details regarding target location, budget parameters, or property criteria..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">Submit Confidential Inquiry</button>
+              <div id="formSuccessMessage" style="display: none; padding: 1rem; border-radius: 6px; background: rgba(201, 168, 76, 0.15); border: 1px solid var(--clr-accent); color: var(--clr-accent); font-weight: 500; font-size: 0.95rem; margin-top: 0.5rem;">
+                ✓ Thank you. Your inquiry has been received. A managing director will contact you shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+          <span class="section-label">Our Location</span>
+          <h3 style="font-size: 1.4rem; margin-top: 0.2rem;">Manhattan Advisory Office</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183783412586!2d-73.97746418459371!3d40.75239197932759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25901844b3613%3A0x6b7747e9ffb5e0!2s450%20Lexington%20Ave%2C%20New%20York%2C%20NY%2010017!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+              title="Pinnacle Realty Location Map" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">P</div>
+            <div class="logo-text">PINNACLE <span>REALTY</span></div>
+          </div>
+          <p>Curators of timeless architectural estates, commercial developments, and bespoke property investment worldwide.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contacts.html">Contacts</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specializations</h4>
+          <a href="services.html">Penthouse Portfolios</a>
+          <a href="services.html">Waterfront Estates</a>
+          <a href="services.html">Commercial Towers</a>
+          <a href="services.html">Private Syndications</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Privacy</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Representation</a>
+          <a href="#">Fair Housing Statement</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pinnacle Realty Global Inc. All rights reserved.</div>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (navToggle && mainNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        siteHeader.style.background = 'rgba(15, 26, 46, 0.95)';
+        siteHeader.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.4)';
+      } else {
+        siteHeader.style.background = 'rgba(15, 26, 46, 0.8)';
+        siteHeader.style.boxShadow = 'none';
+      }
+    });
+
+    const form = document.getElementById('consultationForm');
+    const successMsg = document.getElementById('formSuccessMessage');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('.btn-submit');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        setTimeout(() => {
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Confidential Inquiry';
+          successMsg.style.display = 'block';
+          setTimeout(() => {
+            successMsg.style.display = 'none';
+          }, 6000);
+        }, 800);
+      });
+    }
+  </script>
+</body>
+</html>
