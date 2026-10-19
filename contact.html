@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerren Gumisiriza | Contact</title>
+  <meta name="description" content="Get in touch with Kerren Gumisiriza.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Kerren <span class="text-brand">Gumisiriza</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== CONTACT HEADER ==================== -->
+  <section class="page-header-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="page-header-title">Get In Touch</h1>
+          <p class="page-header-subtitle">I would love to hear from you! Feel free to reach out for collaborations, questions or just to say hello.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact-main-section py-5" id="contact">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Left Column: Contact Info & Social -->
+        <div class="col-lg-5">
+          <!-- Contact Information Card -->
+          <div class="contact-info-card mb-4">
+            <h4 class="contact-card-title">Contact Information</h4>
+            
+            <div class="contact-detail-item">
+              <div class="contact-icon-circle">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6>Email</h6>
+                <p><a href="mailto:gumisirizakerren@gmail.com">gumisirizakerren@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-circle">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6>Phone</h6>
+                <p><a href="tel:+256765487021">+256 765 487 021</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-circle">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6>Location</h6>
+                <p>Kampala, Uganda</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connect With Me -->
+          <div class="connect-card">
+            <h4 class="contact-card-title">Connect With Me</h4>
+            <div class="social-connect-grid">
+              <a href="#" class="social-connect-item" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-connect-item" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-connect-item" aria-label="X (Twitter)">
+                <i class="bi bi-twitter-x"></i>
+                <span>X (Twitter)</span>
+              </a>
+              <a href="#" class="social-connect-item" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="#" class="social-connect-item" aria-label="YouTube">
+                <i class="bi bi-youtube"></i>
+                <span>YouTube</span>
+              <a href="#" class="social-connect-item" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-card">
+            <h4 class="contact-card-title">Send Me a Message</h4>
+
+            <p class="text-muted">Submitting opens your default email app; this static page does not send or store messages.</p>
+            <form id="contactForm">
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-12">
+                  <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control custom-input" id="fullName" name="fullName"
+                    placeholder="Your full name" required>
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-12">
+                  <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control custom-input" id="emailAddress" name="emailAddress"
+                    placeholder="you@example.com" required>
+                </div>
+
+                <!-- Subject -->
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                  <select class="form-select custom-input" id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="project">Project Inquiry</option>
+                    <option value="general">General Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control custom-input" id="message" name="message" rows="5"
+                    placeholder="Your message here..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12">
+                  <button type="submit" class="btn btn-submit-custom w-100" id="submitBtn">
+                    <i class="bi bi-send-fill me-2"></i> Send Message
+                  </button>
+                </div>
+                <div class="col-12">
+                  <p id="formStatus" class="mb-0" role="status" aria-live="polite"></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 footer-copyright">&copy; 2026 Kerren Gumisiriza. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <span class="footer-social-label">Follow Me</span>
+          <div class="footer-social-icons d-inline-flex gap-2 ms-2">
+            <a href="#" aria-label="GitHub" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="bi bi-youtube"></i></a>
+             <a href="#" aria-label="Twitter" class="social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const subject = encodeURIComponent(form.elements.subject.value);
+      const body = encodeURIComponent(
+        `Name: ${form.elements.fullName.value}\nEmail: ${form.elements.emailAddress.value}\n\n${form.elements.message.value}`
+      );
+      document.getElementById('formStatus').textContent =
+        'Opening your email app. If it does not open, email gumisirizakerren@gmail.com directly.';
+      window.location.href = `mailto:gumisirizakerren@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+
+</html>
