@@ -2,133 +2,188 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pinnacle Realty | Home Page</title>
-  <!-- Link to the single external CSS file -->
+  <title>Kerren Gumisiriza | Personal Portfolio</title>
+  <meta name="description" content="Kerren Gumisiriza - A passionate Business Computing student building innovative solutions through technology. View my portfolio, skills, and projects.">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ==================== HEADER & NAVIGATION ==================== -->
-  <header class="site-header">
-    <div class="container header-container">
-      <div class="logo">
-        PINNACLE <span>REALTY</span>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Kerren <span class="text-brand">Gumisiriza  </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <!-- ==================== HERO SECTION ==================== -->
-  <section class="hero">
-    <div class="container">
-      <h1>Welcome to <span>Pinnacle Realty</span></h1>
-      <p>Your trusted partner for buying, selling, and managing luxury residential and commercial properties.</p>
-      <a href="services.html" class="btn btn-primary">Our Services</a>
-      <a href="contacts.html" class="btn btn-outline">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- ==================== BUSINESS OVERVIEW SECTION ==================== -->
-  <section class="overview">
-    <div class="container">
-      <div class="overview-grid">
-        <div class="overview-text">
-          <div class="section-title" style="text-align: left; margin-bottom: 1rem;">
-            <h2>About Our Business</h2>
-            <p>Committed to quality, integrity, and client satisfaction</p>
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-7 hero-content">
+          <h1 class="hero-title">
+            Hello, I'm <span class="text-highlight">Kerren Gumisiriza</span>
+          </h1>
+          <p class="hero-tagline">
+            A passionate Business Computing student, eager to build innovative solutions and make a positive impact through technology.
+          </p>
+          <div class="hero-buttons">
+            <a href="about.html" class="btn btn-primary-custom btn-lg me-3">
+              Learn More About Me <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline-custom btn-lg">
+              <i class="bi bi-envelope me-2"></i> Get In Touch
+            </a>
           </div>
-          <p>
-            Pinnacle Realty is a premier real estate agency established to connect individuals, families, and businesses
-            with prime properties. We specialize in residential sales, commercial leasing, and property advisory.
-          </p>
-          <p>
-            Our dedicated team works closely with each client to provide transparent advice, accurate market valuations,
-            and smooth transactions from start to finish.
-          </p>
-          <ul class="features-list">
-            <li>Over 15 years of combined real estate experience</li>
-            <li>Verified property titles and legal documentation</li>
-            <li>Wide network of residential homes and commercial spaces</li>
-            <li>Personalized advisory and friendly customer support</li>
-          </ul>
         </div>
-        <div class="overview-image">
-          <img src="images/about.jpg" alt="Pinnacle Realty Modern Building">
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+          <div class="hero-image-wrapper">
+            <img src="images/Kerry1.jpeg" alt="Kerren Gumisiriza - Business Computing Student" class="hero-image">
+          </div>
         </div>
       </div>
     </div>
+    <!-- Animated Background Elements -->
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
   </section>
 
-  <!-- ==================== MANAGING DIRECTORS SECTION ==================== -->
-  <section class="directors-section">
+  <!-- ==================== HIGHLIGHTS SECTION ==================== -->
+  <section class="highlights-section py-5" id="highlights">
     <div class="container">
-      <div class="section-title">
-        <h2>Our Managing Directors</h2>
-        <p>Meet the group members leading Pinnacle Realty</p>
+      <div class="text-center mb-5">
+        <h2 class="section-heading">My Highlights</h2>
+        <p class="section-subheading">A quick overview of my skills, education and key achievements.</p>
       </div>
 
-      <div class="directors-grid">
-        <!-- Group Member 1 -->
-        <div class="director-card">
-          <img src="images/director1.jpg" alt="Photo of Kerren Gumisiliza">
-          <h3>Kerren Gumisiriza</h3>
-          <p class="role">Managing Director & CEO</p>
-          <p class="bio">
-            In charge of company strategy, property acquisitions, and client relations. Oversees overall agency
-            operations and major partnerships.
-          </p>
+      <div class="row g-4">
+        <!-- Skills Card -->
+        <div class="col-md-4">
+          <div class="highlight-card text-center h-100">
+            <div class="highlight-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h4 class="highlight-title">My Skills</h4>
+            <p class="highlight-text">HTML, CSS, Bootstrap, JavaScript, C programming, problem-solving and more.</p>
+            <a href="about.html#skills" class="btn btn-sm btn-card-link">
+              View My Skills <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Group Member 2 -->
-        <div class="director-card">
-          <img src="images/director2.jpg" alt="Photo of Catharine Mbabazi">
-          <h3>Catharine Mbabazi</h3>
-          <p class="role">Managing Director of Finance</p>
-          <p class="bio">
-            Manages property valuations, investment planning, and financial accounts. Ensures all sales contracts and
-            mortgage advisories run smoothly.
-          </p>
+        <!-- Education Card -->
+        <div class="col-md-4">
+          <div class="highlight-card text-center h-100">
+            <div class="highlight-icon">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h4 class="highlight-title">My Education</h4>
+            <p class="highlight-text">Currently pursuing a Bachelor's Degree in Business computing at Bugema University.</p>
+            <a href="about.html#education" class="btn btn-sm btn-card-link">
+              My Academic Journey <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Group Member 3 -->
-        <div class="director-card">
-          <img src="images/director3.jpg" alt="Photo of Mark Mukisa">
-          <h3>Mark Mukisa</h3>
-          <p class="role">Managing Director of Marketing</p>
-          <p class="bio">
-            Heads digital marketing, property listings, and customer service. Coordinates client viewings and
-            advertising for new estates.
-          </p>
+        <!-- Projects Card -->
+        <div class="col-md-4">
+          <div class="highlight-card text-center h-100">
+            <div class="highlight-icon">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+            </div>
+            <h4 class="highlight-title">My Projects &amp; Achievements</h4>
+            <p class="highlight-text">Explore my projects, certifications and milestones.</p>
+            <a href="gallery.html" class="btn btn-sm btn-card-link">
+              View My Projects <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="footer">
     <div class="container">
-      <div class="footer-logo">PINNACLE <span>REALTY</span></div>
-      <div class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contacts.html">Contacts</a>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Pinnacle Realty. All Rights Reserved. Developed by Kerren Technologies</p>
+      <div class="row align-items-center">
+        <!-- Copyright -->
+        <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0 footer-copyright">&copy; 2026 Kerren Gumisiriza. All Rights Reserved.</p>
+        </div>
+        <!-- Footer Nav -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <!-- Social Icons -->
+        <div class="col-md-4 text-center text-md-end">
+          <span class="footer-social-label">Follow Me</span>
+          <div class="footer-social-icons d-inline-flex gap-2 ms-2">
+            <a href="#" aria-label="GitHub" class="social-icon"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="bi bi-youtube"></i></a>
+             <a href="#" aria-label="Twitter" class="social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS for Navbar Scroll Effect -->
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('mainNavbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
